@@ -1,0 +1,35 @@
+{
+  "name": "WebRTC-kun",
+  "description": "WebRTC check tool",
+  "version": "1.0.0",
+  "keywords": ["WebRTC", "SkyWay", "peerjs", "MediaDevices"],
+  "license": "MIT",
+  "author": "Weblio",
+  "contributors": ["shimataro <shimataro@zelkova.cc>"],
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp start",
+    "build": "gulp build",
+    "build-html": "gulp build-html",
+    "build-js": "gulp build-js",
+    "build-css": "gulp build-css",
+    "update-packages": "ncu"
+  },
+  "devDependencies": {
+    "babel-core": "6.25.0",
+    "babel-loader": "7.0.0",
+    "babel-preset-env": "1.5.2",
+    "gulp": "3.9.1",
+    "gulp-inline-source": "3.1.0",
+    "gulp-pug": "3.3.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "jquery": "3.2.1",
+    "npm-check-updates": "2.11.3",
+    "skyway-peerjs": "0.4.0",
+    "webpack": "2.6.1"
+  },
+  "dependencies": {
+    "gulp-webserver": "0.9.1"
+  }
+}

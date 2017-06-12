@@ -1,0 +1,79 @@
+@import "_config"
+
+body
+  font:
+    family: "courier", sans-serif
+  margin: 16px
+
+h1
+  border:
+    bottom: 1px solid $color-weblio-complementary
+  font:
+    size: 1.6em
+    weight: normal
+  margin: 16px 0
+
+h2
+  font:
+    size: 1.2em
+    weight: normal
+  margin: 16px 0 8px
+
+ul
+  margin: 8px 0
+  padding: 0 1em
+
+  li
+    line:
+      height: 1.3em
+
+fieldset
+  display: inline-block
+
+a
+  color: $color-anchor
+  text:
+    decoration: none
+
+  &:hover
+    color: $color-anchor-highlighted
+    text:
+      decoration: underline
+
+#video-wrapper
+  background:
+    color: $color-video-background
+  border: 4px solid $color-video-frame
+  color: $color-video-text
+  font:
+    size: 2em
+  height: 480px
+  line:
+    height: 480px
+  margin: 16px 0
+  position: relative
+  text:
+    align: center
+  width: 640px
+
+  video
+    position: absolute
+    height: 100%
+    left: 0
+    top: 0
+    width: 100%
+
+#error
+  background:
+    color: $color-error-background
+  border:
+    color: $color-error-background-border
+    radius: 4px
+    style: solid
+    width: 1px
+  color: $color-error-text
+  display: none
+  padding: 15px
+
+.weblio::first-letter
+  color: $color-weblio

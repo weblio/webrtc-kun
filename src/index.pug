@@ -1,0 +1,51 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        //
+            .
+            ▯▯╗    ▯▯╗▯▯▯▯▯▯▯╗▯▯▯▯▯▯╗ ▯▯╗     ▯▯╗ ▯▯▯▯▯▯╗
+            ▯▯║    ▯▯║▯▯╔════╝▯▯╔══▯▯╗▯▯║     ▯▯║▯▯╔═══▯▯╗
+            ▯▯║ ▯╗ ▯▯║▯▯▯▯▯╗  ▯▯▯▯▯▯╔╝▯▯║     ▯▯║▯▯║   ▯▯║
+            ▯▯║▯▯▯╗▯▯║▯▯╔══╝  ▯▯╔══▯▯╗▯▯║     ▯▯║▯▯║   ▯▯║
+            ╚▯▯▯╔▯▯▯╔╝▯▯▯▯▯▯▯╗▯▯▯▯▯▯╔╝▯▯▯▯▯▯▯╗▯▯║╚▯▯▯▯▯▯╔╝
+             ╚══╝╚══╝╚══════╝╚═════╝ ╚══════╝╚═╝ ╚═════╝
+            .
+        title WebRTCくん
+        link(rel="stylesheet", type="text/css", href="./css/style.css", inline=true)
+    body
+        h1.weblio WebRTCくん
+        #error
+            | お使いのブラウザはWebRTC通信に対応していません。
+            a(href="https://www.google.co.jp/chrome/browser/desktop/", title="Google Chromeの最新版をダウンロード", target="_blank") Google Chrome
+            | の最新版を使ってください。
+        ul
+            li パソコンに接続しているマイクに向かって何かしゃべってみてください。自分の声がスピーカーから聞こえてきたらマイク・スピーカーは正常に動作しています。
+            li 画面下にカメラの映像が映っていればカメラは正常に動作しています。
+            li 新しいマイクやカメラをパソコンに接続した場合はページを再読み込みしてください。
+        h2 正常に動作しない場合
+        ul
+            li マイクやカメラがパソコンに接続されていますか？
+            li システムの設定で、マイクやカメラが正常に認識されていますか？
+            li システムの設定で、マイクやスピーカーがミュートになっていませんか？
+            li システムの設定で、マイクやスピーカーの音量レベルが小さな値になっていませんか？
+            li マイクやカメラを使うアプリが他に起動していませんか？
+            li 音声が聞こえず、内蔵カメラも外付けカメラもないのに「カメラ」に何か表示されている場合、"(disable camera)"を選択すると直る場合があります。
+            li 上記のチェック項目が全て問題ない場合、ページの再読み込みや再起動で直る場合があります。
+        hr
+        fieldset
+            legend
+                label(for="audioinput") マイク
+            select#audioinput(size="5")
+        fieldset
+            legend
+                label(for="videoinput") カメラ
+            select#videoinput(size="5")
+        fieldset
+            legend
+                label(for="audiooutput") スピーカー
+            select#audiooutput(size="5")
+        #video-wrapper
+            | No Camera
+            video#video(autoplay=true)
+        script(type="text/javascript", src="./js/script.min.js", inline=true)

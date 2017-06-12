@@ -1,0 +1,11 @@
+/node_modules/
+/dist/
+
+*.log
+*.tmp
+*.swp
+*.bak
+*~
+
+Thumbs.db
+.DS_Store
