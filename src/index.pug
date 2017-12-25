@@ -45,7 +45,17 @@ html
             legend
                 label(for="audiooutput") スピーカー
             select#audiooutput(size="5")
-        #video-wrapper
+        fieldset.bandwidthSelector
+            legend
+                label(for="videoBandwidth") 映像の帯域
+            select#videoBandwidth
+                option(value="1000") 1000
+                option(value="500") 500
+                option(value="300" selected) 300
+                option(value="100") 100
+            | kbps
+
+        #videoWrapper
             | No Camera
             video#video(autoplay=true)
         script(type="text/javascript", src="./js/script.min.js", inline=true)
