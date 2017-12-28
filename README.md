@@ -22,7 +22,7 @@ WebRTC-kun
 * [Mozilla Firefox](https://www.mozilla.org/en/firefox/) (latest version)
 
 ## Setup
-1. Register from the [SkyWay top page](https://nttcom.github.io/skyway/en/index.html) （e-mail address required）
+1. Register via [SkyWay](https://webrtc.ecl.ntt.com/en/signup.html) （e-mail address required）
 2. After login, register an API key from the [SkyWay Dashboard](https://skyway.io/ds/)
     * Specify `localhost` under usable domains
 3. Paste your registered API key under `key` in [config.es](./src/js/config.es)

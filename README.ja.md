@@ -22,7 +22,7 @@ WebRTCくん
 * [Mozilla Firefox](https://www.mozilla.org/ja/firefox/) 最新版
 
 ## 準備
-1. [SkyWayのページ](https://nttcom.github.io/skyway/index.html)から開発者登録（メールアドレスが必要）
+1. [SkyWayのページ](https://webrtc.ecl.ntt.com/signup.html)から登録（メールアドレスが必要）
 1. ログイン後、[SkyWayダッシュボード](https://skyway.io/ds/)からAPIキーを登録
     * 利用可能ドメインに `localhost` を指定
 1. 登録したAPIキーを[config.es](./src/js/config.es)の `key` に貼り付け
