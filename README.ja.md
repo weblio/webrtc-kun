@@ -1,6 +1,9 @@
 WebRTCくん
 ===
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/weblio/webrtc-kun/blob/master/LICENSE)
+<a href="https://david-dm.org/weblio/webrtc-kun"><img src="https://david-dm.org/weblio/webrtc-kun.svg" alt="Dependency Status"></a>
+<a href="https://david-dm.org/weblio/webrtc-kun/?type=dev"><img src="https://david-dm.org/weblio/webrtc-kun/dev-status.svg" alt="devDependency Status"></a>
 * [English](README.md)
 * [日本語](README.ja.md)
 
