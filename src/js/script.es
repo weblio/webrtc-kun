@@ -142,6 +142,7 @@ function getConstraints() {
     if (audioId !== null) {
         constraints.audio = {
             deviceId: audioId,
+            echoCancellation: false,
         };
     }
     if (videoId !== null && videoId !== "") {
